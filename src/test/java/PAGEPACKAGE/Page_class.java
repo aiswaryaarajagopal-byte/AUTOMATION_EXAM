@@ -39,7 +39,7 @@ public class Page_class {
 	WebElement firstProductAddCart;
 
 	
-	// Constructor
+	
 	public Page_class(WebDriver driver)
 	{
 		this.driver=driver;
@@ -48,7 +48,7 @@ public class Page_class {
 		js=(JavascriptExecutor)driver;
 	}
 
-	// Login
+	
 	public void login(String user,String pass)
 	{
 		driver.get("https://www.houseofem5.com/account/login");
@@ -70,18 +70,7 @@ public class Page_class {
 		act.moveToElement(firstOption).click().perform();
 	}
 
-	// Scroll and click first product Add To Cart
-	//public void addProduct()
-	//{
-		//wait.until(ExpectedConditions.visibilityOf(firstProductAddCart));
-
-		//js.executeScript("arguments[0].scrollIntoView(true);", firstProductAddCart);
-
-		//wait.until(ExpectedConditions.elementToBeClickable(firstProductAddCart));
-
-		//firstProductAddCart.click();
 	
-	// Scroll and click first product Add To Cart
 	public void addProduct()
 	{
 	    wait.until(ExpectedConditions.visibilityOf(firstProductAddCart));
